@@ -2,12 +2,12 @@ Summary:	An Emacs citation tool for News & Mail messages
 Summary(pl):	Narzêdzie Emacsa do cytowania w poczcie i newsach
 Name:		xemacs-supercite-pkg
 %define		srcname	supercite
-Version:	1.19
+Version:	1.20
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	8f6767ea4e03306d1e5553501ed7cd2e
+# Source0-md5:	277fb688d3765c0434e34013e811e94d
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
