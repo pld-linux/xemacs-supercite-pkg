@@ -1,14 +1,15 @@
-Summary:	An Emacs citation tool for News & Mail messages.
-Summary(pl):	An Emacs citation tool for News & Mail messages.
+Summary:	An Emacs citation tool for News & Mail messages
+Summary(pl):	Narzêdzie Emacsa do cytowania w poczcie i newsach
 Name:		xemacs-supercite-pkg
 %define 	srcname	supercite
 Version:	1.18
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-Patch0:		xemacs-supercite-pkg-info.patch
+Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Conflicts:	xemacs-sumo
@@ -36,8 +37,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
-	lisp/supercite/ChangeLog 
+gzip -9nf lisp/supercite/ChangeLog 
 
 %clean
 rm -fr $RPM_BUILD_ROOT
