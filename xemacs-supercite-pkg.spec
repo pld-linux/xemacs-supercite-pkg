@@ -2,7 +2,7 @@ Summary:	An Emacs citation tool for News & Mail messages.
 Summary(pl):	An Emacs citation tool for News & Mail messages.
 Name:		xemacs-supercite-pkg
 %define 	srcname	supercite
-Version:	1.14
+Version:	1.16
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
