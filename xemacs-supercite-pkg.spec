@@ -29,7 +29,8 @@ Narzêdzie Emacsa do cytowania w poczcie i newsach.
 %patch0 -p1
 
 %build
-(cd man/supercite; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)
+cd man/supercite
+awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo
 
 %install
 rm -rf $RPM_BUILD_ROOT
