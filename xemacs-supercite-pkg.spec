@@ -1,7 +1,7 @@
 Summary:	An Emacs citation tool for News & Mail messages
 Summary(pl):	Narzêdzie Emacsa do cytowania w poczcie i newsach
 Name:		xemacs-supercite-pkg
-%define 	srcname	supercite
+%define		srcname	supercite
 Version:	1.19
 Release:	1
 License:	GPL
@@ -25,8 +25,10 @@ Requires:	xemacs-base-pkg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+An Emacs citation tool for News & Mail messages.
 
-%description -l pl 
+%description -l pl
+Narzêdzie Emacsa do cytowania w poczcie i newsach.
 
 %prep
 %setup -q -c
@@ -40,10 +42,10 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_datadir}/xemacs-packages,%{_infodir}}
 
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
-mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
+mv -f $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/supercite/ChangeLog 
+gzip -9nf lisp/supercite/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
@@ -56,7 +58,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/supercite/ChangeLog.gz 
+%doc lisp/supercite/ChangeLog.gz
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc
