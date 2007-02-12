@@ -1,5 +1,5 @@
 Summary:	An Emacs citation tool for News & Mail messages
-Summary(pl.UTF-8):   Narzędzie Emacsa do cytowania w poczcie i newsach
+Summary(pl.UTF-8):	Narzędzie Emacsa do cytowania w poczcie i newsach
 Name:		xemacs-supercite-pkg
 %define		srcname	supercite
 Version:	1.20
